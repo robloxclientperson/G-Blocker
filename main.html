@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The G-Blocker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Newicon.ico" type="image/x-icon">
+  <button style="float: left; background-color: red;"><a style="color: white;" href="https://github.com/Vortron-rd/T-Crack">Original</a></button>
+  <button onclick="aboutBlank(window.location.href, 'embed')"style="float: right;">Open in new tab</button>
+</head>
+<body>
+  <div id=title>
+  <img src="logo.png" width=50% style="display: block; margin-left: 20%; margin-right: auto;">
+  <p><em>"Now with... Modified stuff."</em></p>
+  </div>
+  <div id="hub-menu">
+    <ul>
+      <li onclick="loadGame('https://www.1v1.lol')">1v1.lol</li>
+      <li onclick="loadGame('https://www.splix.io')">Splix</li>
+      <li onclick="loadGame('https://www.buildroyale.io')">BuildRoyale</li>
+      <li onclick="loadGame('https://www.suroi.io')">Suroi</li>
+      <li onclick="loadGame('https://eaglercraft.com/mc/1.8.8/')">Eaglercraft (Minecraft 1.8.8)</li>
+      <li onclick="loadGame('https://subwaysurf.io/subway-surfers.play')">Subway Surfers</li>
+      <li onclick="loadGame('https://www.google.com/webhp?igu=1')">Google Search</li>
+      <li onclick="loadGame('https://browser.rammerhead.org')">RammerHead Proxy</li>
+      <li onclick="loadGame('https://soundbuttonsworld.com/')">SoundBoard</li>
+      <li onclick="loadGame('https://websim.ai/')">WebSim (You get to play AI Recreations!)</li>
+    </ul>
+    <div id="custom-url">
+>
+    </div>
+  </div>
+  <div id="game-menu">
+    <ul>
+      <li><button id="fullscreen-btn" onclick="toggleFullscreen()">Fullscreen</button></li>
+      <input id="url-input" placeholder="https://example.com" type="url" style="width: 30%;">
+      <button id="url-insite" onclick="loadGame(document.getElementById('url-input').value)">Open below</button>
+      <button id="url-newtab" onclick="aboutBlank((document.getElementById('url-input').value), 'embed')">Open in cloaked tab</button>
+    </ul>
+  </div>
+  
+  <div id="game-container">
+    <!-- Placeholder for the game content -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
